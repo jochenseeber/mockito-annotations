@@ -1,0 +1,15 @@
+*~
+/.classpath
+/.gradle
+/.project
+/.settings
+/build
+/pom.xml.releaseBackup
+/release.properties
+/target
+\#**#
+/bin/
+/.checkstyle
+/build/
+/target/
+\#*\#

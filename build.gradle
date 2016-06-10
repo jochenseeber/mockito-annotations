@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies {
+        classpath group: "me.seeber.gradle", name: "gradle-github-config", version: "1.0.0"
+        classpath group: "me.seeber.gradle", name: "gradle-license-config", version: "1.0.0"
+        classpath group: "me.seeber.gradle", name: "gradle-project-config", version: "1.0.0"
+    }
+}
+
+version = "1.10.19-r.1"
+group = "me.seeber.annotations"
+description = "External annotations for Mockito 1.10.19"
+
+apply plugin: "me.seeber.project.annotations"
+// apply plugin: "me.seeber.distribution.bintray"
+apply plugin: "me.seeber.repository.github"
+apply plugin: "me.seeber.distribution.maven"
+apply plugin: "me.seeber.ide.eclipse"
+apply plugin: "me.seeber.setup.license"
+
+model {
+    projectConfig {
+        organization.name = "Jochen Seeber"
+        inceptionYear = 2016
+        license.id = "BSD 2-Clause"
+    }
+
+    annotatedProject {
+        id = "mockito"
+        name = "Mockito"
+        url = "http://site.mockito.org/"
+    }
+
+    githubConfig { user = "jochenseeber" }
+}
