@@ -7,13 +7,13 @@ buildscript {
     }
 
     dependencies {
-        classpath group: "me.seeber.gradle", name: "gradle-github-config", version: "1.0.0"
-        classpath group: "me.seeber.gradle", name: "gradle-license-config", version: "1.0.0"
-        classpath group: "me.seeber.gradle", name: "gradle-project-config", version: "1.0.0"
+        classpath group: "me.seeber.gradle", name: "gradle-github-config", version: "1.1.0"
+        classpath group: "me.seeber.gradle", name: "gradle-license-config", version: "1.1.0"
+        classpath group: "me.seeber.gradle", name: "gradle-project-config", version: "1.1.0"
     }
 }
 
-version = "1.10.19-r.1"
+version = "1.10.19-r.2"
 group = "me.seeber.annotations"
 description = "External annotations for Mockito 1.10.19"
 

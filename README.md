@@ -13,5 +13,5 @@ To build the annotations JAR, run
 gradle build
 ```
 
-This will create the file `mockito-annotations-1.10.19-r.1.jar`. Attach this file to the
+This will create the file `mockito-annotations-1.10.19-r.2.jar`. Attach this file to the
 Mockito library entry in your build path to have Eclipse use the annotations.
