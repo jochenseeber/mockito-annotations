@@ -14,7 +14,7 @@ buildscript {
     }
 }
 
-version = "1.10.19-r.2"
+version = "1.10.19-r.3"
 group = "me.seeber.annotations"
 description = "External annotations for Mockito 1.10.19"
 
